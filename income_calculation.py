@@ -1,3 +1,4 @@
+# https://likegeeks.com/python-gui-examples-tkinter-tutorial/
 from tkinter import *
 
 def entry_str_to_float(entry: Entry) -> int:
@@ -16,7 +17,7 @@ def income_post_tax(income: Entry, labor_market_tax_rate: Entry, municipality_ta
 
 
 window = Tk()
-window.title("Welcome to LikeGeeks app")
+window.title("Udregn din indkomst efter skat")
 window.geometry('350x200')
 
 # indkomst
