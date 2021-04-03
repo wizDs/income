@@ -12,8 +12,9 @@ def income_post_tax(income: Entry, labor_market_tax_rate: Entry, municipality_ta
     tax_deduction = entry_str_to_float(tax_deduction)
 
     taxable_income = income - tax_deduction
-
-    return taxable_income * (1-labor_market_tax_rate) * (1-municipality_tax_rate) + tax_deduction
+    income_post_tax = taxable_income * (1-labor_market_tax_rate) * (1-municipality_tax_rate) + tax_deduction
+    
+    return round(income_post_tax, 2)
 
 
 window = Tk()
